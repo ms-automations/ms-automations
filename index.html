@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KI-Automationen für Unternehmen</title>
+  <style>
+    /* Premium Look – Seriös & Modern */
+    :root {
+      --primary: #0d1b2a;
+      --secondary: #1b263b;
+      --accent: #e0a82e;
+      --text: #f7f7f7;
+      --bg: #0b0e11;
+      --card-bg: #11151a;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    nav {
+      background: var(--secondary) !important;
+      color: var(--text);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    nav a { color: var(--text) !important; font-weight: 500; }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--text);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    h1 { font-size: 2.8rem; margin-bottom: 10px; font-weight: 600; }
+    h2 { font-size: 2rem; margin-bottom: 20px; font-weight: 500; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .services { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+    .cta {
+      background: var(--primary);
+      color: var(--text);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .btn {
+      background: var(--accent);
+      padding: 14px 24px;
+      border-radius: 10px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    input, textarea {
+      background: #161b22;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.1) !important;
+    }
+    button {
+      background: var(--accent) !important;
+      color: #000 !important;
+    }
+    @media(max-width: 700px) {
+      .services { grid-template-columns: 1fr; }
+      h1 { font-size: 2rem; }
+    }
+@keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+  /* Hover Animation for Cards */
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  }
+  /* Icon Styling */
+  .service-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--accent);
+  }
+  /* Animated Divider */
+  .divider {
+    width: 120px;
+    height: 3px;
+    background: var(--accent);
+    margin: 30px auto;
+    animation: pulse 2s infinite;
+    border-radius: 5px;
+  }
+  @keyframes pulse {
+    0% {opacity: 0.4;}
+    50% {opacity: 1;}
+    100% {opacity: 0.4;}
+  }
+  /* New Typography */
+  body { font-family: 'Montserrat', sans-serif; }
+</style>
+</head>
+<body>
+<nav style="background:#ffffff; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+  <div style="font-weight:bold; font-size:1.2rem;">MS Automations</div>
+  <div style="display:flex; gap:20px;">
+    <a href="#services" style="text-decoration:none; color:#1a1a1a;">Services</a>
+    <a href="#preise" style="text-decoration:none; color:#1a1a1a;">Preise</a>
+    <a href="#referenzen" style="text-decoration:none; color:#1a1a1a;">Referenzen</a>
+    <a href="#kontakt" style="text-decoration:none; color:#1a1a1a;">Kontakt</a>
+  </div>
+</nav>
+
+<header style="position:relative; overflow:hidden;">
+  <img src="https://via.placeholder.com/1600x500?text=Modern+Business+Automation" alt="Hero" style="width:100%; height:100%; object-fit:cover; opacity:0.25; position:absolute; top:0; left:0;"/>
+  <div style="position:relative; z-index:2;">
+  <img src="https://via.placeholder.com/120x120?text=MS+Logo" alt="Logo" style="width:120px; margin-bottom:20px;"/>
+  <h1 style="animation: fadeIn 1.5s ease;">Maximilian Steinig – KI-Automationen für Immobilien, Handwerk & Gastronomie</h1>
+  <p style="margin-top:10px;font-size:1.2rem;">Ich automatisiere Anfragen, Angebote & Prozesse – schnell, zuverlässig & ohne komplizierte Technik.</p>
+</div></header>
+
+<section>
+  <h2>Über mich</h2>
+  <p>Mein Name ist Maximilian Steinig. Ich helfe kleinen und mittelständischen Unternehmen aus Immobilien, Handwerk und Gastronomie dabei, mit einfachen und effektiven KI-Automationen Zeit zu sparen und schneller mehr Umsatz zu erzielen. Ohne Fachchinesisch, ohne teure Software und ohne komplizierte Technik – einfach, klar und praxisnah.</p>
+</section>
+
+<section>
+  <h2>Warum KI-Automation?</h2>
+  <p>Viele Betriebe verlieren täglich 1–3 Stunden durch manuelle Arbeit: Angebote schreiben, E-Mails beantworten, Anfragen sortieren, Social Media pflegen. Mit einfachen, maßgeschneiderten KI-Automationen sparen Sie Zeit, reduzieren Fehler und steigern Ihren Umsatz.</p>
+</section>
+
+<section id="services">
+  <h2>Meine Services</h2>
+  <div class="divider"></div>
+  <div class="services">
+
+    <div class="card">
+      <div class="service-icon">★</div>
+      <h3>Automatische Angebotserstellung (Handwerk)</h3>
+      <p>Kundenanfrage rein → KI erstellt automatisch ein professionelles Vorab-Angebot → Sie sparen täglich Zeit.</p>
+      <strong>150–500 € einmalig</strong>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">★</div>
+      <h3>Lead-Qualifizierung (Immobilien)</h3>
+      <p>KI sortiert Anfragen und erkennt automatisch Hot Leads. Perfekt für Makler, die viele Anfragen erhalten.</p>
+      <strong>200–450 €</strong>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">★</div>
+      <h3>Kundenservice-Bots (Website/WhatsApp)</h3>
+      <p>Automatisierte Antworten auf häufige Fragen, Terminbuchungen und Info-Abfragen – rund um die Uhr.</p>
+      <strong>200–800 €</strong>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">★</div>
+      <h3>Reservierungs- & Gäste-Assistent (Gastronomie)</h3>
+      <p>Automatische Tischreservierungen, Tagesmenü-Auskünfte und schnelle Antworten für Gäste.</p>
+      <strong>200–500 €</strong>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>So läuft die Zusammenarbeit ab</h2>
+  <ol>
+    <li><strong>Kurzes Gespräch</strong> – Ich verstehe Ihr Geschäftsmodell & Ihre Probleme.</li>
+    <li><strong>Demo</strong> – Sie bekommen eine kostenlose, kleine Beispiel-Automation.</li>
+    <li><strong>Umsetzung</strong> – Meist innerhalb von 24–48 Stunden.</li>
+    <li><strong>Optional: Betreuung</strong> – 50–150 €/Monat für Updates, Monitoring & Erweiterungen.</li>
+  </ol>
+</section>
+
+<section id="preise">
+  <h2>Preise</h2>
+  <ul>
+    <li><strong>Automatische Angebotserstellung:</strong> 150–500 €</li>
+    <li><strong>Lead-Qualifizierung:</strong> 200–450 €</li>
+    <li><strong>Kundenservice-Bots:</strong> 200–800 €</li>
+    <li><strong>Gastronomie-Assistent:</strong> 200–500 €</li>
+  </ul>
+</section>
+
+<div class="cta">
+  <h2>Interesse an einer kostenlosen Demo?</h2>
+  <p>Ich zeige Ihnen unverbindlich, wie KI in Ihrem Betrieb sofort Zeit & Geld spart.</p>
+  <a href="#kontakt" class="btn">Jetzt Kontakt aufnehmen</a>
+</div>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Senden Sie mir eine Nachricht per E-Mail:</p>
+  <p><strong>maximilians643@googlemail.com</strong></p>
+  <p>Oder per WhatsApp:</p>
+  <p><strong>+49 170 9627966</strong></p>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <div class="card">
+      <div class="service-icon">★</div>
+    <p><strong>Wie schnell erfolgt die Umsetzung?</strong><br>In der Regel innerhalb von 24–48 Stunden.</p>
+    <p><strong>Benötige ich technische Vorkenntnisse?</strong><br>Nein – alles wird fertig eingerichtet.</p>
+    <p><strong>Kann ich später erweitern?</strong><br>Ja, alle Automationen können flexibel ausgebaut werden.</p>
+  </div>
+</section>
+
+<section id="kontaktformular">
+  <h2>Kontaktformular</h2>
+  <form style="display:flex; flex-direction:column; gap:15px; max-width:600px; margin:auto;">
+    <input type="text" placeholder="Name" required style="padding:12px; border-radius:8px; border:1px solid #ccc;"/>
+    <input type="email" placeholder="E-Mail" required style="padding:12px; border-radius:8px; border:1px solid #ccc;"/>
+    <textarea placeholder="Nachricht" required style="padding:12px; border-radius:8px; border:1px solid #ccc; min-height:120px;"></textarea>
+    <button type="submit" style="padding:12px; border-radius:8px; background:#ffcc00; font-weight:bold; border:none; cursor:pointer;">Absenden</button>
+  </form>
+</section>
+
+<footer>
+  <div style="margin-top:10px; font-size:0.9rem; opacity:0.6;">Powered by MS Automations – Premium KI-Lösungen</div>
+  © 2025 – KI-Automationsservice
+<section id="referenzen">
+  <h2>Referenzen</h2>
+  <div class="card" style="max-width:700px; margin:auto;">
+    <p><em>„Durch die Automation von Maximilian sparen wir täglich 1–2 Stunden Büroarbeit. Absolute Empfehlung!“</em><br>– Handwerksbetrieb (2025)</p>
+  </div>
+</section>
+
+<footer>
+
+</body>
+</html>
