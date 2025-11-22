@@ -219,12 +219,14 @@
 
 <section id="kontaktformular">
   <h2>Kontaktformular</h2>
-  <form style="display:flex; flex-direction:column; gap:15px; max-width:600px; margin:auto;">
+  <form action="https://formspree.io/f/mayvlzgv" method="POST" style="display:flex; flex-direction:column; gap:15px; max-width:600px; margin:auto;">
     <input type="text" placeholder="Name" required style="padding:12px; border-radius:8px; border:1px solid #ccc;"/>
     <input type="email" placeholder="E-Mail" required style="padding:12px; border-radius:8px; border:1px solid #ccc;"/>
     <textarea placeholder="Nachricht" required style="padding:12px; border-radius:8px; border:1px solid #ccc; min-height:120px;"></textarea>
     <button type="submit" style="padding:12px; border-radius:8px; background:#ffcc00; font-weight:bold; border:none; cursor:pointer;">Absenden</button>
-  </form>
+  <input type="hidden" name="_subject" value="Neue Anfrage über die Website" />
+    <input type="hidden" name="email" value="maximilians643@googlemail.com" />
+</form>
 </section>
 
 <footer>
